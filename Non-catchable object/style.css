@@ -1,0 +1,36 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    background-image: linear-gradient(#2E7D32, rgb(99, 160, 38));
+}
+
+#banner{
+    display: flex;
+    width: 50vw;
+    height: 20vh;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    text-align: center;
+    color: lawngreen;
+    font-size: 7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#image_cont{
+    width: 70px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+#image_cont img{
+    width: inherit;
+    height: inherit;
+}
