@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    background-color: lightgrey;
+}
+
 #button-container{
    text-align: center;
 }
@@ -17,12 +22,36 @@
     min-height : 50px;
     margin : 20px;
     flex-wrap : wrap-reverse;
-    box-shadow : 0px 0px 5px black;    
+    box-shadow : 0px 0px 5px black;  
+    border-radius: 10px;  
 }
 
 .collect-ball{
     border-radius : 50%;
     width : 40px;
     height : 40px;
+    box-shadow: 0px 0px 5px;
     /* background-color: indigo; */
+}
+
+@keyframes bounceBall{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(100px);}
+    100%{transform: translateY(0px);}
+}
+
+#playground{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#playground .collect-ball:nth-child(2n){
+    animation: bounceBall 5s linear 0s infinite alternate;
+    margin: 10px;
+}
+
+#playground .collect-ball:nth-child(2n+1){
+    animation: bounceBall 5s ease 0s infinite forwards;
+    margin: 5px;
 }
