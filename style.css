@@ -1,0 +1,19 @@
+#button-container{
+    display : flex;
+    justify-content: center;
+}
+
+#basket{
+    display : flex;
+    background-color: skyblue;
+    min-height : 50px;
+    margin : 20px;
+    flex-wrap : wrap-reverse;
+    box-shadow : 0px 0px 5px black;    
+}
+
+#basket .collect-ball{
+    border-radius : 50%;
+    width : 40px;
+    height : 40px;
+}
