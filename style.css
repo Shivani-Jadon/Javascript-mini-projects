@@ -1,6 +1,14 @@
 #button-container{
-    display : flex;
-    justify-content: center;
+   text-align: center;
+}
+
+#button-container input{
+    width: 50%;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px black solid;
+    padding: 1%;
+    margin: 2%;
 }
 
 #basket{
@@ -12,7 +20,7 @@
     box-shadow : 0px 0px 5px black;    
 }
 
-#basket .collect-ball{
+.collect-ball{
     border-radius : 50%;
     width : 40px;
     height : 40px;
